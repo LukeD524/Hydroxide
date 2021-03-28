@@ -824,7 +824,7 @@ scriptContext:SetCallback(function()
     local remotePath = getInstancePath(selectedRemote)
     for i,instance in pairs(selectedRemote.Parent:GetChildren()) do
         if instance == selectedRemote then
-            remotePath = getInstancePath(selectedRemote.Parent).."["..i.."]"
+            remotePath = getInstancePath(selectedRemote.Parent)..":GetChildren()["..i.."]"
         end
     end
     local method
