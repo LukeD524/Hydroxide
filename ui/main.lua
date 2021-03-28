@@ -14,7 +14,7 @@ local UpvalueScanner
 local ConstantScanner
 
 xpcall(function()
-	RemoteSpy = import("ui/modules/RemoteSpy")
+	RemoteSpy = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/LukeD524/Hydroxide/362ecbf496105888701c44f51ec05988bf50b7c9/ui/modules/RemoteSpy.lua"))()
 	ClosureSpy = import("ui/modules/ClosureSpy")
 	ScriptScanner = import("ui/modules/ScriptScanner")
 	ModuleScanner = import("ui/modules/ModuleScanner")
